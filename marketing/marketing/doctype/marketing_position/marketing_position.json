@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "autoname": "field:position_name",
+ "creation": "2021-04-09 15:58:31.677060",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_info_section",
+  "position_name",
+  "platform_name",
+  "parent_marketing_position",
+  "is_group",
+  "column_break_3",
+  "status",
+  "usual_duration",
+  "pricing_section",
+  "position_cost",
+  "column_break_10",
+  "position_billable",
+  "position_details_section",
+  "resolution_width",
+  "uom",
+  "details",
+  "section_break_16",
+  "resolution_height",
+  "resolution",
+  "lft",
+  "rgt",
+  "old_parent"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_info_section",
+   "fieldtype": "Section Break",
+   "label": "General Info"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "position_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Marketing Position name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "platform.platform_name",
+   "fieldname": "platform_name",
+   "fieldtype": "Link",
+   "in_preview": 1,
+   "label": "Platform",
+   "options": "Platform"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "parent_marketing_position",
+   "fieldtype": "Link",
+   "label": "Parent",
+   "options": "Marketing Position"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Free",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Status",
+   "options": "Free\nOcupied\nPending\nReserved"
+  },
+  {
+   "fieldname": "usual_duration",
+   "fieldtype": "Duration",
+   "label": "Usual Duration"
+  },
+  {
+   "fieldname": "pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "position_cost",
+   "fieldtype": "Float",
+   "label": "Position Cost"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "position_billable",
+   "fieldtype": "Float",
+   "label": "Position Billable"
+  },
+  {
+   "fieldname": "position_details_section",
+   "fieldtype": "Section Break",
+   "label": "Position details"
+  },
+  {
+   "fieldname": "resolution_width",
+   "fieldtype": "Int",
+   "label": "Resolution Width"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Text Editor",
+   "label": "More Details"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "resolution_height",
+   "fieldtype": "Int",
+   "label": "Resolution Height"
+  },
+  {
+   "default": "px",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "Marketing Position"
+  },
+  {
+   "fieldname": "resolution",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Resolution"
+  }
+ ],
+ "is_tree": 1,
+ "links": [],
+ "modified": "2021-04-13 12:54:48.320103",
+ "modified_by": "Administrator",
+ "module": "Marketing",
+ "name": "Marketing Position",
+ "nsm_parent_field": "parent_marketing_position",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "position_name",
+ "track_changes": 1
+}

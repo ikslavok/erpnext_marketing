@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-04-11 17:09:53.032417",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "mp_name",
+  "status",
+  "position_billable",
+  "position_cost",
+  "resolution"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "options": "MAMAI-.YY.MM."
+  },
+  {
+   "fieldname": "mp_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Marketing Position",
+   "options": "Marketing Position"
+  },
+  {
+   "default": "Reserved",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Free\nOcupied\nPending\nReserved"
+  },
+  {
+   "fieldname": "position_billable",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Position Billable"
+  },
+  {
+   "fieldname": "position_cost",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Position Cost"
+  },
+  {
+   "fieldname": "resolution",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Resolution"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-04-13 12:23:43.326719",
+ "modified_by": "Administrator",
+ "module": "Marketing",
+ "name": "Marketing Material Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
