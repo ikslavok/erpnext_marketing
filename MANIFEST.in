@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include marketing *.css
+recursive-include marketing *.csv
+recursive-include marketing *.html
+recursive-include marketing *.ico
+recursive-include marketing *.js
+recursive-include marketing *.json
+recursive-include marketing *.md
+recursive-include marketing *.png
+recursive-include marketing *.py
+recursive-include marketing *.svg
+recursive-include marketing *.txt
+recursive-exclude marketing *.pyc
