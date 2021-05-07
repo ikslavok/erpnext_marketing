@@ -9,25 +9,20 @@
   "general_info_section",
   "position_name",
   "platform_name",
-  "parent_marketing_position",
-  "is_group",
   "column_break_3",
   "status",
-  "usual_duration",
   "pricing_section",
   "position_cost",
   "column_break_10",
   "position_billable",
   "position_details_section",
-  "resolution_width",
-  "uom",
+  "resolution",
+  "usual_duration",
   "details",
   "section_break_16",
-  "resolution_height",
-  "resolution",
-  "lft",
-  "rgt",
-  "old_parent"
+  "size",
+  "image_attachment",
+  "image_view"
  ],
  "fields": [
   {
@@ -57,20 +52,6 @@
    "options": "Platform"
   },
   {
-   "allow_in_quick_entry": 1,
-   "fieldname": "parent_marketing_position",
-   "fieldtype": "Link",
-   "label": "Parent",
-   "options": "Marketing Position"
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "default": "0",
-   "fieldname": "is_group",
-   "fieldtype": "Check",
-   "label": "Is Group"
-  },
-  {
    "fieldname": "column_break_3",
    "fieldtype": "Column Break"
   },
@@ -81,7 +62,7 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Status",
-   "options": "Free\nOcupied\nPending\nReserved"
+   "options": "Free\nOcupied\nReserved"
   },
   {
    "fieldname": "usual_duration",
@@ -113,11 +94,6 @@
    "label": "Position details"
   },
   {
-   "fieldname": "resolution_width",
-   "fieldtype": "Int",
-   "label": "Resolution Width"
-  },
-  {
    "fieldname": "details",
    "fieldtype": "Text Editor",
    "label": "More Details"
@@ -127,50 +103,36 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "resolution_height",
-   "fieldtype": "Int",
-   "label": "Resolution Height"
-  },
-  {
-   "default": "px",
-   "fieldname": "uom",
-   "fieldtype": "Link",
-   "label": "UOM",
-   "options": "UOM"
-  },
-  {
-   "fieldname": "lft",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Left",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "rgt",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Right",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "old_parent",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Old Parent",
-   "options": "Marketing Position"
-  },
-  {
    "fieldname": "resolution",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Resolution"
+   "label": "Resolution (WxH px)"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size (WxH cm)"
+  },
+  {
+   "fieldname": "image_attachment",
+   "fieldtype": "Attach Image",
+   "label": "Position Image attachment"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "in_preview": 1,
+   "label": "Position Image",
+   "options": "image_attachment"
   }
  ],
- "is_tree": 1,
- "links": [],
- "modified": "2021-04-13 12:54:48.320103",
+ "links": [
+  {
+   "group": "Povezani Materijali",
+   "link_doctype": "Marketing Material",
+   "link_fieldname": "position"
+  }
+ ],
+ "modified": "2021-05-07 15:14:57.383454",
  "modified_by": "Administrator",
  "module": "Marketing",
  "name": "Marketing Position",
