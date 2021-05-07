@@ -8,7 +8,7 @@
  "field_order": [
   "general_info_section",
   "position_name",
-  "platform_name",
+  "platform",
   "column_break_3",
   "status",
   "pricing_section",
@@ -22,7 +22,12 @@
   "section_break_16",
   "size",
   "image_attachment",
-  "image_view"
+  "image_view",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_marketing_position"
  ],
  "fields": [
   {
@@ -41,15 +46,6 @@
    "label": "Marketing Position name",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fetch_from": "platform.platform_name",
-   "fieldname": "platform_name",
-   "fieldtype": "Link",
-   "in_preview": 1,
-   "label": "Platform",
-   "options": "Platform"
   },
   {
    "fieldname": "column_break_3",
@@ -123,8 +119,51 @@
    "in_preview": 1,
    "label": "Position Image",
    "options": "image_attachment"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Marketing Position"
+  },
+  {
+   "fieldname": "parent_marketing_position",
+   "fieldtype": "Link",
+   "label": "Parent Marketing Position",
+   "options": "Marketing Position"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "platform.platform_name",
+   "fieldname": "platform",
+   "fieldtype": "Link",
+   "in_preview": 1,
+   "label": "Platform",
+   "options": "Platform"
   }
  ],
+ "is_tree": 1,
  "links": [
   {
    "group": "Povezani Materijali",
@@ -132,7 +171,7 @@
    "link_fieldname": "position"
   }
  ],
- "modified": "2021-05-07 15:14:57.383454",
+ "modified": "2021-05-07 19:46:57.425452",
  "modified_by": "Administrator",
  "module": "Marketing",
  "name": "Marketing Position",

@@ -10,6 +10,7 @@
   "lft",
   "rgt",
   "is_group",
+  "old_parent",
   "parent_platform"
  ],
  "fields": [
@@ -42,7 +43,6 @@
    "read_only": 1
   },
   {
-   "allow_in_quick_entry": 1,
    "default": "0",
    "fieldname": "is_group",
    "fieldtype": "Check",
@@ -53,7 +53,13 @@
    "fieldname": "parent_platform",
    "fieldtype": "Link",
    "in_preview": 1,
-   "label": "Parent",
+   "label": "Parent Platform",
+   "options": "Platform"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
    "options": "Platform"
   }
  ],
@@ -66,7 +72,7 @@
    "link_fieldname": "platform_name"
   }
  ],
- "modified": "2021-04-13 14:32:23.404958",
+ "modified": "2021-05-07 15:33:17.062425",
  "modified_by": "Administrator",
  "module": "Marketing",
  "name": "Platform",
