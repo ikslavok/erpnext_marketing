@@ -1,7 +1,7 @@
 {
  "actions": [],
  "autoname": "field:position_name",
- "creation": "2021-04-09 15:58:31.677060",
+ "creation": "2021-05-08 08:30:17.706623",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -43,6 +43,15 @@
    "unique": 1
   },
   {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "platform.platform_name",
+   "fieldname": "platform",
+   "fieldtype": "Link",
+   "in_preview": 1,
+   "label": "Platform",
+   "options": "Platform"
+  },
+  {
    "fieldname": "column_break_3",
    "fieldtype": "Column Break"
   },
@@ -54,11 +63,6 @@
    "in_preview": 1,
    "label": "Status",
    "options": "Free\nOcupied\nReserved"
-  },
-  {
-   "fieldname": "usual_duration",
-   "fieldtype": "Duration",
-   "label": "Usual Duration"
   },
   {
    "fieldname": "pricing_section",
@@ -85,6 +89,16 @@
    "label": "Position details"
   },
   {
+   "fieldname": "resolution",
+   "fieldtype": "Data",
+   "label": "Resolution (WxH px)"
+  },
+  {
+   "fieldname": "usual_duration",
+   "fieldtype": "Duration",
+   "label": "Usual Duration"
+  },
+  {
    "fieldname": "details",
    "fieldtype": "Text Editor",
    "label": "More Details"
@@ -92,11 +106,6 @@
   {
    "fieldname": "section_break_16",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "resolution",
-   "fieldtype": "Data",
-   "label": "Resolution (WxH px)"
   },
   {
    "fieldname": "size",
@@ -114,15 +123,6 @@
    "in_preview": 1,
    "label": "Position Image",
    "options": "image_attachment"
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fetch_from": "platform.platform_name",
-   "fieldname": "platform",
-   "fieldtype": "Link",
-   "in_preview": 1,
-   "label": "Platform",
-   "options": "Platform"
   }
  ],
  "links": [
@@ -132,7 +132,7 @@
    "link_fieldname": "position"
   }
  ],
- "modified": "2021-05-08 08:09:15.085232",
+ "modified": "2021-05-08 08:30:17.706623",
  "modified_by": "Administrator",
  "module": "Marketing",
  "name": "Marketing Position",

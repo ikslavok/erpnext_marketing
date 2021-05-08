@@ -4,9 +4,7 @@
 
 from __future__ import unicode_literals
 # import frappe
-from frappe.utils.nestedset import NestedSet
+from frappe.model.document import Document
 
-
-class MarketingPosition(NestedSet):
+class MarketingPosition(Document):
 	pass
-
