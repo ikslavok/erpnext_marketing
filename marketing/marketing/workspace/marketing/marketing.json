@@ -1,0 +1,70 @@
+{
+ "cards_label": "Masters",
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-05-07 10:11:43.924539",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "user",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Marketing",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "All Marketing",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Marketing Material",
+   "link_to": "Marketing Material",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Marketing Position",
+   "link_to": "Marketing Position",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Platform",
+   "link_to": "Platform",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2021-05-09 15:47:59.805362",
+ "modified_by": "Administrator",
+ "module": "Marketing",
+ "name": "Marketing",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "Calendar",
+   "label": "Marketing Schedule",
+   "link_to": "Marketing Material",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Shortcuts"
+}
