@@ -16,7 +16,7 @@
   "column_break_10",
   "position_billable",
   "position_details_section",
-  "resolution",
+  "position_resolution",
   "usual_duration",
   "details",
   "section_break_16",
@@ -89,11 +89,6 @@
    "label": "Position details"
   },
   {
-   "fieldname": "resolution",
-   "fieldtype": "Data",
-   "label": "Resolution (WxH px)"
-  },
-  {
    "fieldname": "usual_duration",
    "fieldtype": "Duration",
    "label": "Usual Duration"
@@ -123,6 +118,11 @@
    "in_preview": 1,
    "label": "Position Image",
    "options": "image_attachment"
+  },
+  {
+   "fieldname": "position_resolution",
+   "fieldtype": "Data",
+   "label": "Resolution (WxH px)"
   }
  ],
  "links": [
@@ -132,7 +132,7 @@
    "link_fieldname": "position"
   }
  ],
- "modified": "2021-05-08 08:30:17.706623",
+ "modified": "2021-05-09 16:59:46.763710",
  "modified_by": "Administrator",
  "module": "Marketing",
  "name": "Marketing Position",

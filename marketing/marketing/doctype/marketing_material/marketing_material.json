@@ -18,16 +18,24 @@
   "end",
   "position_section_break",
   "position",
-  "postion_cost",
   "column_break_14",
   "platform",
+  "pricing_section",
+  "position_cost",
+  "total_position_cost",
+  "column_break_27",
+  "column_break_18",
   "position_billable",
+  "total_position_billable",
   "source_information_section",
   "material_supplier",
   "project",
   "campaign",
-  "column_break_18",
-  "details"
+  "column_break_25",
+  "details",
+  "products_section",
+  "default_price_list",
+  "marketing_items"
  ],
  "fields": [
   {
@@ -63,6 +71,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "collapsible": 1,
    "fieldname": "source_information_section",
    "fieldtype": "Section Break",
    "label": "Source Information"
@@ -109,6 +118,7 @@
    "search_index": 1
   },
   {
+   "collapsible": 1,
    "fieldname": "position_section_break",
    "fieldtype": "Section Break",
    "label": "Marketing Position Details"
@@ -120,13 +130,8 @@
    "options": "Marketing Position"
   },
   {
-   "fieldname": "postion_cost",
-   "fieldtype": "Data",
-   "label": "Position Cost (per day)"
-  },
-  {
    "fieldname": "position_billable",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Position Billable (per day)"
   },
   {
@@ -155,13 +160,61 @@
   },
   {
    "fieldname": "platform",
-   "fieldtype": "Data",
-   "label": "Platform"
+   "fieldtype": "Link",
+   "label": "Platform",
+   "options": "Platform"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "position_cost",
+   "fieldtype": "Float",
+   "label": "Position Cost (per day)"
+  },
+  {
+   "fieldname": "total_position_cost",
+   "fieldtype": "Float",
+   "label": "Total position cost"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_position_billable",
+   "fieldtype": "Float",
+   "label": "Total position billable"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "products_section",
+   "fieldtype": "Section Break",
+   "label": "Products"
+  },
+  {
+   "fieldname": "default_price_list",
+   "fieldtype": "Link",
+   "label": "Default Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "marketing_items",
+   "fieldtype": "Table",
+   "label": "Marketing Items",
+   "options": "Marketing Items"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-07 14:55:54.332170",
+ "modified": "2021-05-09 19:30:50.785384",
  "modified_by": "Administrator",
  "module": "Marketing",
  "name": "Marketing Material",
