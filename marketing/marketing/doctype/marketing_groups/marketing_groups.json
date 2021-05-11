@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "creation": "2021-05-11 21:23:08.940463",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "marketing_groups"
+ ],
+ "fields": [
+  {
+   "fieldname": "marketing_groups",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Marketing Groups",
+   "options": "Item Group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-05-11 21:23:08.940463",
+ "modified_by": "Administrator",
+ "module": "Marketing",
+ "name": "Marketing Groups",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

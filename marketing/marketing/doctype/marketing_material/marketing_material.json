@@ -35,7 +35,9 @@
   "details",
   "products_section",
   "default_price_list",
-  "marketing_items"
+  "marketing_items",
+  "marketing_groups",
+  "marketing_brands"
  ],
  "fields": [
   {
@@ -210,11 +212,23 @@
    "fieldtype": "Table",
    "label": "Marketing Items",
    "options": "Marketing Items"
+  },
+  {
+   "fieldname": "marketing_groups",
+   "fieldtype": "Table",
+   "label": "Marketing Groups",
+   "options": "Marketing Groups"
+  },
+  {
+   "fieldname": "marketing_brands",
+   "fieldtype": "Table",
+   "label": "Marketing Brands",
+   "options": "Marketing Brands"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-09 19:30:50.785384",
+ "modified": "2021-05-11 21:24:30.748827",
  "modified_by": "Administrator",
  "module": "Marketing",
  "name": "Marketing Material",
