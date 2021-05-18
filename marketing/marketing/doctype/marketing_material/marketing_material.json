@@ -27,12 +27,14 @@
   "column_break_18",
   "position_billable",
   "total_position_billable",
-  "source_information_section",
+  "material_details_section",
   "material_supplier",
-  "project",
-  "campaign",
-  "column_break_25",
   "details",
+  "source_information_section",
+  "project",
+  "matketing_tasks",
+  "column_break_25",
+  "campaign",
   "products_section",
   "default_price_list",
   "marketing_items",
@@ -76,7 +78,7 @@
    "collapsible": 1,
    "fieldname": "source_information_section",
    "fieldtype": "Section Break",
-   "label": "Source Information"
+   "label": "Project Information"
   },
   {
    "fetch_from": "supplier.supplier_name",
@@ -112,8 +114,10 @@
   {
    "allow_in_quick_entry": 1,
    "bold": 1,
+   "columns": 3,
    "fieldname": "mm_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "in_preview": 1,
    "label": "Material Name",
    "reqd": 1,
@@ -224,11 +228,24 @@
    "fieldtype": "Table",
    "label": "Marketing Brands",
    "options": "Marketing Brands"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "material_details_section",
+   "fieldtype": "Section Break",
+   "label": "Material Details"
+  },
+  {
+   "fieldname": "matketing_tasks",
+   "fieldtype": "Table",
+   "label": "Marketing Tasks",
+   "options": "Marketing Tasks",
+   "width": "12"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-11 21:24:30.748827",
+ "modified": "2021-05-18 23:50:56.034204",
  "modified_by": "Administrator",
  "module": "Marketing",
  "name": "Marketing Material",
